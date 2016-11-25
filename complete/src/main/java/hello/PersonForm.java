@@ -6,6 +6,8 @@ import javax.validation.constraints.Size;
 
 public class PersonForm {
 
+    private long id;
+
     @NotNull
     @Size(min=2, max=30)
     private String name;
@@ -13,6 +15,14 @@ public class PersonForm {
     @NotNull
     @Min(18)
     private Integer age;
+
+    public long getId() {
+        return id;
+    }
+
+    public void setId(long id) {
+        this.id = id;
+    }
 
     public String getName() {
         return this.name;

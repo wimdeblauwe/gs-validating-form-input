@@ -1,6 +1,6 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
     <body>
-        <form action="#" th:action="@{/}" th:object="${personForm}" method="post">
+        <form action="#" th:action="@{/user/{id}(id=${personForm.id})}" th:object="${personForm}" method="post">
             <table>
                 <tr>
                     <td>Name:</td>
